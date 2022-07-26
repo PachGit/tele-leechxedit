@@ -113,6 +113,9 @@ CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
 DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
 MAX_MESSAGE_LENGTH = 4096
 
+#Update Channel
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "<a href='https://t.me/vava_tg'><b>ꪜꪖꪜꪖ</b></a>")
+
 # Timeout for Subprocess >>>>>>>>
 PROCESS_MAX_TIMEOUT = 3600
 
