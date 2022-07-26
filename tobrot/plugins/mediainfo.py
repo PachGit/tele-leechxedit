@@ -27,12 +27,12 @@ from tobrot.helper_funcs.bot_commands import BotCommands
 def post_to_telegraph(a_title: str, content: str) -> str:
     """ Create a Telegram Post using HTML Content """
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "FuZionX-Leech"
+    auth_name = "ꪜꪖꪜꪖ"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=a_title,
         author=auth_name,
-        author_url="https://t.me/FXTorrentz",
+        author_url="https://t.me/vava_tg",
         text=content,
     )
     return post_page["url"]
@@ -110,7 +110,7 @@ async def mediainfo(client, message):
     if DIRECT_LINK:
         title = unquote(link.split('/')[-1])
     else:
-        title = "FX Mediainfo"
+        title = "ꪜꪖꪜꪖ Mediainfo"
     tgh_link = post_to_telegraph(title, body_text)
 
     if TG_MEDIA:
